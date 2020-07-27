@@ -1,0 +1,109 @@
+:root {                         
+    box-sizing: border-box; 
+    font-size: calc(0.5em + .7vw);   
+}                             
+*,                            
+::before,                     
+::after {                       
+    box-sizing: inherit;        
+}                             
+body {  
+    background-color: #eee;  
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* body * + * {               
+    margin-top: 1.5em;     
+} */
+header{
+    max-width: 1000px;
+    margin: auto auto .5em;
+    padding: 1em 0;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul{
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+li{ 
+    margin: .5em 0 1em .5em;
+    float: left;
+    padding: .5em;
+    border-radius: .5em;
+    border: solid lightcyan;
+    outline: none;
+    background-color: aquamarine;
+} 
+li + li{
+    margin: .5em 1em .5em;
+}
+#home{
+    display: block;
+    /* min-height: 20em; */
+    /* content: HOME; */
+    font-size: 2em;
+    font-style: oblique;
+    text-align: center;
+    color: rgb(3, 236, 139);
+    background-color: rgb(170, 157, 172);
+}
+#about{
+    display: none;
+    /* min-height: 20em; */
+    /* content: 'ABOUT'; */
+    font-size: 2em;
+    font-style: oblique;
+    text-align: center;
+    color: rgb(230, 181, 20);
+    background-color: rgb(119, 94, 117);
+}
+#community{
+    display: none;
+    /* content: COMMUNITY; */
+    font-size: 2em;
+    font-style: oblique;
+    text-align: center;
+    color: blueviolet;
+    background-color: azure;
+}
+.container {  
+    max-width: 1000px;    
+    min-height: 15em; 
+    margin: 3em auto auto;
+    border: .7em groove gainsboro;
+    border-radius: .5em;   
+    font-weight: 1000;
+    font-size: x-large;
+    padding-top: 3em;
+} 
+.clearfix::before{       
+    display: table;      
+    content: " ";
+}   
+.row::after {          
+    content: " ";        
+    display: table;      
+    clear: both;       
+} 
+.row {  
+    margin-left: -0.75em;  
+    margin-right: -0.75em;
+}
+[class*="column-"] {         
+    float: left; 
+    padding: 0 0.75em;      
+    margin-top: 0;             
+}                          
+.column-1 { width: 8.3333%; }    
+.column-2 { width: 16.6667%; }   
+.column-3 { width: 25%; }        
+.column-4 { width: 33.3333%; }
+.column-5 { width: 41.6667%; }
+.column-6 { width: 50%; }
+.column-7 { width: 58.3333%; }
+.column-8 { width: 66.6667%; }
+.column-9 { width: 75%; }
+.column-10 { width: 83.3333%; }
+.column-11 { width: 91.6667% }
+.column-12 { width: 100%; }  
