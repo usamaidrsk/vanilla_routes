@@ -3,7 +3,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="/script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,6 +22,7 @@
     <div id="community" class="container">
         COMMUNITY
     </div>
+     <script src="/script.js"></script>
 </body>
     <script>
         document.getElementById('lists').addEventListener('click',function(e){
@@ -30,7 +30,7 @@
         if(e.target.id == 'hom'){
             document.getElementById('home').style.display = 'block';
             document.getElementById('about').style.display = 'none';
-            document.getElementById('community').style.display = 'bnone';
+            document.getElementById('community').style.display = 'none';
         }
         else if(e.target.id == 'abot'){
             document.getElementById('about').style.display = 'block';
